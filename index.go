@@ -12,6 +12,7 @@ func main() {
 	// deal := d.deal(4)
 	d.reset()
 	d.shuffle()
+	d.shuffle()
 	// d.save("first.txt")
 	// d.load("first.txt")
 	d.print()
@@ -19,5 +20,5 @@ func main() {
 	// d.print()
 	// fmt.Println("deal cards:")
 	// deal.save("first.txt")
-	d.print()
+	// d.print()
 }
