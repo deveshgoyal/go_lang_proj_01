@@ -32,11 +32,11 @@ func main() {
 	// fmt.Println("deal cards:")
 	// deal.save("f()irst.txt")
 	// d.print()
-	implicit()
+	implicit("gcp-testing")
 }
 
 // implicit uses Application Default Credentials to authenticate.
-func implicit() {
+func implicit(project string) {
 	ctx := context.Background()
 
 	// For API packages whose import path is starting with "cloud.google.com/go",
@@ -47,7 +47,7 @@ func implicit() {
 		log.Fatal(err)
 	}
 
-	it := storageClient.Buckets(ctx, "project-id")
+	it := storageClient.Buckets(ctx, project)
 	for {
 		bucketAttrs, err := it.Next()
 		if err == iterator.Done {
