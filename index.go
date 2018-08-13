@@ -19,4 +19,5 @@ func main() {
 	// d.print()
 	// fmt.Println("deal cards:")
 	// deal.save("first.txt")
+	d.print()
 }
