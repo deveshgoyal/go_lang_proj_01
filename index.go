@@ -30,8 +30,9 @@ func main() {
 	// fmt.Println("deck:")
 	// d.print()
 	// fmt.Println("deal cards:")
-	// deal.save("first.txt")
+	// deal.save("f()irst.txt")
 	// d.print()
+	implicit()
 }
 
 // implicit uses Application Default Credentials to authenticate.
