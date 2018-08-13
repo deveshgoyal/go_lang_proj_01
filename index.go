@@ -72,4 +72,6 @@ func implicit() {
 	}
 
 	_ = kmsService
+
+	fmt.Println(kmsService)
 }
